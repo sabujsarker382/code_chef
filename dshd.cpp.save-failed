@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+
+    while(t--){
+        int x=0,y=0;
+        int  n;
+        cin >>n;
+        string s[n];
+        for(int i=0;i<n;i++){
+            cin>>s[i];
+        }
+         for(int i=0;i<s.length();i++){
+           if(s[i]=='U'){
+            x=x+1;
+           }
+           if(s[i]=='D'){
+            x=x-1;
+           }
+            if(s[i]=='L'){
+            y=y-1;
+           }
+            if(s[i]=='R'){
+            y=y+1;
+           }
+        }
+        cout<<x<<y<<endl;
+    }
+
+}
